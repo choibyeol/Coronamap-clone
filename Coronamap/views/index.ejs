@@ -101,6 +101,8 @@
             map: map,
             position: latlng,
           });
+          map.setZoom(14, false);
+          map.panTo(latlng);
         });
       } else {
         alert("위치 정보 사용 불가능");
