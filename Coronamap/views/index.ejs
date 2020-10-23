@@ -92,7 +92,19 @@
     }
 
     $("#current").click(() => {
-      alert("클릭 이벤트");
+      if ('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          const lat = position.coords.latitude;
+          const lng = position.coords.longitude;
+          const latlng = new naver.maps.LatLng(lat, lng);
+          marker = new naver.maps.Marker({
+            map: map,
+            position: latlng,
+          });
+        });
+      } else {
+        alert("위치 정보 사용 불가능");
+      }
     });
   </script>
 </body>
