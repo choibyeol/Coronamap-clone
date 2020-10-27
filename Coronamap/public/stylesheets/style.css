@@ -69,7 +69,7 @@ body {
   background: white;
   left: 20px;
   padding: 15px;
-  border: 1px solid rgba(0,0, 0, 0.2;
+  border: 1px solid rgba(0,0, 0, 0.2);
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
@@ -83,7 +83,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 0 rgb(255, 0, 0);
-  animation: pulse 1,7s infinite;
+  animation: pulse 1.7s infinite;
 }
 
 @keyframes pulse {
